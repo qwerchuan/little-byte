@@ -1,3 +1,9 @@
+# 此项目 fork 自 [little-byte](https://github.com/Nihiue/little-byte)
+本项目主要做了以下修改
+1. 支持 node 20 22 
+2. 修复单元测试报错问题
+
+
 # little-byte
 
 Compile Node.js code into bytecode.

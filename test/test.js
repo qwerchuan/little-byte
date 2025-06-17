@@ -110,7 +110,8 @@ describe('Run ByteCode', function () {
 
   it('stack trace should contain correct file path', function () {
     const { mod, sayHello, myClass } = getSubModule();
-    assert(mod.stackTrace().includes('/sub/index.js:'));
+    const stackTrace = mod.stackTrace()
+    assert(stackTrace.includes(['sub', 'index.js:'].join(path.sep)) || stackTrace.includes(['sub', 'index.bytecode:'].join(path.sep)));
   })
 
   it('require should pass module info', function () {
