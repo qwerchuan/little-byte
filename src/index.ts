@@ -8,6 +8,7 @@ const supportVersions = [
   'v18',
   'v20',
   'v22',
+  'v24',
 ];
 if (!supportVersions.some(v => process.version.startsWith(v))) {
   throw new Error('bytecode: unsupported node version');

@@ -3,6 +3,8 @@
       "outDir": "lib",
       "module": "commonjs",
       "target": "es2019",
+      // 仅加载 ES2019 标准库，避免 DOM 与 Node.js 的 AbortSignal 类型声明冲突。
+      "lib": ["es2019"],
       "noImplicitAny": true,
       "removeComments": true,
       "preserveConstEnums": true,
